@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>&#x7ED8;&#x5236;&#x8BCD;&#x4E91;&#x56FE;</title>
+        <style>
+/* From extension vscode.markdown-math */
+@font-face{font-family:KaTeX_AMS;src:url(fonts/KaTeX_AMS-Regular.woff2) format("woff2"),url(fonts/KaTeX_AMS-Regular.woff) format("woff"),url(fonts/KaTeX_AMS-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Bold.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Bold.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Regular.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Regular.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Bold.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Bold.woff) format("woff"),url(fonts/KaTeX_Fraktur-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Regular.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Regular.woff) format("woff"),url(fonts/KaTeX_Fraktur-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Bold.woff2) format("woff2"),url(fonts/KaTeX_Main-Bold.woff) format("woff"),url(fonts/KaTeX_Main-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Main-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Main-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Italic.woff2) format("woff2"),url(fonts/KaTeX_Main-Italic.woff) format("woff"),url(fonts/KaTeX_Main-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Regular.woff2) format("woff2"),url(fonts/KaTeX_Main-Regular.woff) format("woff"),url(fonts/KaTeX_Main-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Math-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Math-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-Italic.woff2) format("woff2"),url(fonts/KaTeX_Math-Italic.woff) format("woff"),url(fonts/KaTeX_Math-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Bold.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Bold.woff) format("woff"),url(fonts/KaTeX_SansSerif-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Italic.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Italic.woff) format("woff"),url(fonts/KaTeX_SansSerif-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Regular.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Regular.woff) format("woff"),url(fonts/KaTeX_SansSerif-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Script;src:url(fonts/KaTeX_Script-Regular.woff2) format("woff2"),url(fonts/KaTeX_Script-Regular.woff) format("woff"),url(fonts/KaTeX_Script-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size1;src:url(fonts/KaTeX_Size1-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size1-Regular.woff) format("woff"),url(fonts/KaTeX_Size1-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size2;src:url(fonts/KaTeX_Size2-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size2-Regular.woff) format("woff"),url(fonts/KaTeX_Size2-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size3;src:url(fonts/KaTeX_Size3-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size3-Regular.woff) format("woff"),url(fonts/KaTeX_Size3-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size4;src:url(fonts/KaTeX_Size4-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size4-Regular.woff) format("woff"),url(fonts/KaTeX_Size4-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Typewriter;src:url(fonts/KaTeX_Typewriter-Regular.woff2) format("woff2"),url(fonts/KaTeX_Typewriter-Regular.woff) format("woff"),url(fonts/KaTeX_Typewriter-Regular.ttf) format("truetype");font-weight:400;font-style:normal}.katex{font:normal 1.21em KaTeX_Main,Times New Roman,serif;line-height:1.2;text-indent:0;text-rendering:auto;border-color:currentColor}.katex *{-ms-high-contrast-adjust:none!important}.katex .katex-version:after{content:"0.13.0"}.katex .katex-mathml{position:absolute;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden}.katex .katex-html>.newline{display:block}.katex .base{position:relative;white-space:nowrap;width:-webkit-min-content;width:-moz-min-content;width:min-content}.katex .base,.katex .strut{display:inline-block}.katex .textbf{font-weight:700}.katex .textit{font-style:italic}.katex .textrm{font-family:KaTeX_Main}.katex .textsf{font-family:KaTeX_SansSerif}.katex .texttt{font-family:KaTeX_Typewriter}.katex .mathnormal{font-family:KaTeX_Math;font-style:italic}.katex .mathit{font-family:KaTeX_Main;font-style:italic}.katex .mathrm{font-style:normal}.katex .mathbf{font-family:KaTeX_Main;font-weight:700}.katex .boldsymbol{font-family:KaTeX_Math;font-weight:700;font-style:italic}.katex .amsrm,.katex .mathbb,.katex .textbb{font-family:KaTeX_AMS}.katex .mathcal{font-family:KaTeX_Caligraphic}.katex .mathfrak,.katex .textfrak{font-family:KaTeX_Fraktur}.katex .mathtt{font-family:KaTeX_Typewriter}.katex .mathscr,.katex .textscr{font-family:KaTeX_Script}.katex .mathsf,.katex .textsf{font-family:KaTeX_SansSerif}.katex .mathboldsf,.katex .textboldsf{font-family:KaTeX_SansSerif;font-weight:700}.katex .mathitsf,.katex .textitsf{font-family:KaTeX_SansSerif;font-style:italic}.katex .mainrm{font-family:KaTeX_Main;font-style:normal}.katex .vlist-t{display:inline-table;table-layout:fixed;border-collapse:collapse}.katex .vlist-r{display:table-row}.katex .vlist{display:table-cell;vertical-align:bottom;position:relative}.katex .vlist>span{display:block;height:0;position:relative}.katex .vlist>span>span{display:inline-block}.katex .vlist>span>.pstrut{overflow:hidden;width:0}.katex .vlist-t2{margin-right:-2px}.katex .vlist-s{display:table-cell;vertical-align:bottom;font-size:1px;width:2px;min-width:2px}.katex .vbox{display:inline-flex;flex-direction:column;align-items:baseline}.katex .hbox{width:100%}.katex .hbox,.katex .thinbox{display:inline-flex;flex-direction:row}.katex .thinbox{width:0;max-width:0}.katex .msupsub{text-align:left}.katex .mfrac>span>span{text-align:center}.katex .mfrac .frac-line{display:inline-block;width:100%;border-bottom-style:solid}.katex .hdashline,.katex .hline,.katex .mfrac .frac-line,.katex .overline .overline-line,.katex .rule,.katex .underline .underline-line{min-height:1px}.katex .mspace{display:inline-block}.katex .clap,.katex .llap,.katex .rlap{width:0;position:relative}.katex .clap>.inner,.katex .llap>.inner,.katex .rlap>.inner{position:absolute}.katex .clap>.fix,.katex .llap>.fix,.katex .rlap>.fix{display:inline-block}.katex .llap>.inner{right:0}.katex .clap>.inner,.katex .rlap>.inner{left:0}.katex .clap>.inner>span{margin-left:-50%;margin-right:50%}.katex .rule{display:inline-block;border:0 solid;position:relative}.katex .hline,.katex .overline .overline-line,.katex .underline .underline-line{display:inline-block;width:100%;border-bottom-style:solid}.katex .hdashline{display:inline-block;width:100%;border-bottom-style:dashed}.katex .sqrt>.root{margin-left:.27777778em;margin-right:-.55555556em}.katex .fontsize-ensurer.reset-size1.size1,.katex .sizing.reset-size1.size1{font-size:1em}.katex .fontsize-ensurer.reset-size1.size2,.katex .sizing.reset-size1.size2{font-size:1.2em}.katex .fontsize-ensurer.reset-size1.size3,.katex .sizing.reset-size1.size3{font-size:1.4em}.katex .fontsize-ensurer.reset-size1.size4,.katex .sizing.reset-size1.size4{font-size:1.6em}.katex .fontsize-ensurer.reset-size1.size5,.katex .sizing.reset-size1.size5{font-size:1.8em}.katex .fontsize-ensurer.reset-size1.size6,.katex .sizing.reset-size1.size6{font-size:2em}.katex .fontsize-ensurer.reset-size1.size7,.katex .sizing.reset-size1.size7{font-size:2.4em}.katex .fontsize-ensurer.reset-size1.size8,.katex .sizing.reset-size1.size8{font-size:2.88em}.katex .fontsize-ensurer.reset-size1.size9,.katex .sizing.reset-size1.size9{font-size:3.456em}.katex .fontsize-ensurer.reset-size1.size10,.katex .sizing.reset-size1.size10{font-size:4.148em}.katex .fontsize-ensurer.reset-size1.size11,.katex .sizing.reset-size1.size11{font-size:4.976em}.katex .fontsize-ensurer.reset-size2.size1,.katex .sizing.reset-size2.size1{font-size:.83333333em}.katex .fontsize-ensurer.reset-size2.size2,.katex .sizing.reset-size2.size2{font-size:1em}.katex .fontsize-ensurer.reset-size2.size3,.katex .sizing.reset-size2.size3{font-size:1.16666667em}.katex .fontsize-ensurer.reset-size2.size4,.katex .sizing.reset-size2.size4{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size2.size5,.katex .sizing.reset-size2.size5{font-size:1.5em}.katex .fontsize-ensurer.reset-size2.size6,.katex .sizing.reset-size2.size6{font-size:1.66666667em}.katex .fontsize-ensurer.reset-size2.size7,.katex .sizing.reset-size2.size7{font-size:2em}.katex .fontsize-ensurer.reset-size2.size8,.katex .sizing.reset-size2.size8{font-size:2.4em}.katex .fontsize-ensurer.reset-size2.size9,.katex .sizing.reset-size2.size9{font-size:2.88em}.katex .fontsize-ensurer.reset-size2.size10,.katex .sizing.reset-size2.size10{font-size:3.45666667em}.katex .fontsize-ensurer.reset-size2.size11,.katex .sizing.reset-size2.size11{font-size:4.14666667em}.katex .fontsize-ensurer.reset-size3.size1,.katex .sizing.reset-size3.size1{font-size:.71428571em}.katex .fontsize-ensurer.reset-size3.size2,.katex .sizing.reset-size3.size2{font-size:.85714286em}.katex .fontsize-ensurer.reset-size3.size3,.katex .sizing.reset-size3.size3{font-size:1em}.katex .fontsize-ensurer.reset-size3.size4,.katex .sizing.reset-size3.size4{font-size:1.14285714em}.katex .fontsize-ensurer.reset-size3.size5,.katex .sizing.reset-size3.size5{font-size:1.28571429em}.katex .fontsize-ensurer.reset-size3.size6,.katex .sizing.reset-size3.size6{font-size:1.42857143em}.katex .fontsize-ensurer.reset-size3.size7,.katex .sizing.reset-size3.size7{font-size:1.71428571em}.katex .fontsize-ensurer.reset-size3.size8,.katex .sizing.reset-size3.size8{font-size:2.05714286em}.katex .fontsize-ensurer.reset-size3.size9,.katex .sizing.reset-size3.size9{font-size:2.46857143em}.katex .fontsize-ensurer.reset-size3.size10,.katex .sizing.reset-size3.size10{font-size:2.96285714em}.katex .fontsize-ensurer.reset-size3.size11,.katex .sizing.reset-size3.size11{font-size:3.55428571em}.katex .fontsize-ensurer.reset-size4.size1,.katex .sizing.reset-size4.size1{font-size:.625em}.katex .fontsize-ensurer.reset-size4.size2,.katex .sizing.reset-size4.size2{font-size:.75em}.katex .fontsize-ensurer.reset-size4.size3,.katex .sizing.reset-size4.size3{font-size:.875em}.katex .fontsize-ensurer.reset-size4.size4,.katex .sizing.reset-size4.size4{font-size:1em}.katex .fontsize-ensurer.reset-size4.size5,.katex .sizing.reset-size4.size5{font-size:1.125em}.katex .fontsize-ensurer.reset-size4.size6,.katex .sizing.reset-size4.size6{font-size:1.25em}.katex .fontsize-ensurer.reset-size4.size7,.katex .sizing.reset-size4.size7{font-size:1.5em}.katex .fontsize-ensurer.reset-size4.size8,.katex .sizing.reset-size4.size8{font-size:1.8em}.katex .fontsize-ensurer.reset-size4.size9,.katex .sizing.reset-size4.size9{font-size:2.16em}.katex .fontsize-ensurer.reset-size4.size10,.katex .sizing.reset-size4.size10{font-size:2.5925em}.katex .fontsize-ensurer.reset-size4.size11,.katex .sizing.reset-size4.size11{font-size:3.11em}.katex .fontsize-ensurer.reset-size5.size1,.katex .sizing.reset-size5.size1{font-size:.55555556em}.katex .fontsize-ensurer.reset-size5.size2,.katex .sizing.reset-size5.size2{font-size:.66666667em}.katex .fontsize-ensurer.reset-size5.size3,.katex .sizing.reset-size5.size3{font-size:.77777778em}.katex .fontsize-ensurer.reset-size5.size4,.katex .sizing.reset-size5.size4{font-size:.88888889em}.katex .fontsize-ensurer.reset-size5.size5,.katex .sizing.reset-size5.size5{font-size:1em}.katex .fontsize-ensurer.reset-size5.size6,.katex .sizing.reset-size5.size6{font-size:1.11111111em}.katex .fontsize-ensurer.reset-size5.size7,.katex .sizing.reset-size5.size7{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size5.size8,.katex .sizing.reset-size5.size8{font-size:1.6em}.katex .fontsize-ensurer.reset-size5.size9,.katex .sizing.reset-size5.size9{font-size:1.92em}.katex .fontsize-ensurer.reset-size5.size10,.katex .sizing.reset-size5.size10{font-size:2.30444444em}.katex .fontsize-ensurer.reset-size5.size11,.katex .sizing.reset-size5.size11{font-size:2.76444444em}.katex .fontsize-ensurer.reset-size6.size1,.katex .sizing.reset-size6.size1{font-size:.5em}.katex .fontsize-ensurer.reset-size6.size2,.katex .sizing.reset-size6.size2{font-size:.6em}.katex .fontsize-ensurer.reset-size6.size3,.katex .sizing.reset-size6.size3{font-size:.7em}.katex .fontsize-ensurer.reset-size6.size4,.katex .sizing.reset-size6.size4{font-size:.8em}.katex .fontsize-ensurer.reset-size6.size5,.katex .sizing.reset-size6.size5{font-size:.9em}.katex .fontsize-ensurer.reset-size6.size6,.katex .sizing.reset-size6.size6{font-size:1em}.katex .fontsize-ensurer.reset-size6.size7,.katex .sizing.reset-size6.size7{font-size:1.2em}.katex .fontsize-ensurer.reset-size6.size8,.katex .sizing.reset-size6.size8{font-size:1.44em}.katex .fontsize-ensurer.reset-size6.size9,.katex .sizing.reset-size6.size9{font-size:1.728em}.katex .fontsize-ensurer.reset-size6.size10,.katex .sizing.reset-size6.size10{font-size:2.074em}.katex .fontsize-ensurer.reset-size6.size11,.katex .sizing.reset-size6.size11{font-size:2.488em}.katex .fontsize-ensurer.reset-size7.size1,.katex .sizing.reset-size7.size1{font-size:.41666667em}.katex .fontsize-ensurer.reset-size7.size2,.katex .sizing.reset-size7.size2{font-size:.5em}.katex .fontsize-ensurer.reset-size7.size3,.katex .sizing.reset-size7.size3{font-size:.58333333em}.katex .fontsize-ensurer.reset-size7.size4,.katex .sizing.reset-size7.size4{font-size:.66666667em}.katex .fontsize-ensurer.reset-size7.size5,.katex .sizing.reset-size7.size5{font-size:.75em}.katex .fontsize-ensurer.reset-size7.size6,.katex .sizing.reset-size7.size6{font-size:.83333333em}.katex .fontsize-ensurer.reset-size7.size7,.katex .sizing.reset-size7.size7{font-size:1em}.katex .fontsize-ensurer.reset-size7.size8,.katex .sizing.reset-size7.size8{font-size:1.2em}.katex .fontsize-ensurer.reset-size7.size9,.katex .sizing.reset-size7.size9{font-size:1.44em}.katex .fontsize-ensurer.reset-size7.size10,.katex .sizing.reset-size7.size10{font-size:1.72833333em}.katex .fontsize-ensurer.reset-size7.size11,.katex .sizing.reset-size7.size11{font-size:2.07333333em}.katex .fontsize-ensurer.reset-size8.size1,.katex .sizing.reset-size8.size1{font-size:.34722222em}.katex .fontsize-ensurer.reset-size8.size2,.katex .sizing.reset-size8.size2{font-size:.41666667em}.katex .fontsize-ensurer.reset-size8.size3,.katex .sizing.reset-size8.size3{font-size:.48611111em}.katex .fontsize-ensurer.reset-size8.size4,.katex .sizing.reset-size8.size4{font-size:.55555556em}.katex .fontsize-ensurer.reset-size8.size5,.katex .sizing.reset-size8.size5{font-size:.625em}.katex .fontsize-ensurer.reset-size8.size6,.katex .sizing.reset-size8.size6{font-size:.69444444em}.katex .fontsize-ensurer.reset-size8.size7,.katex .sizing.reset-size8.size7{font-size:.83333333em}.katex .fontsize-ensurer.reset-size8.size8,.katex .sizing.reset-size8.size8{font-size:1em}.katex .fontsize-ensurer.reset-size8.size9,.katex .sizing.reset-size8.size9{font-size:1.2em}.katex .fontsize-ensurer.reset-size8.size10,.katex .sizing.reset-size8.size10{font-size:1.44027778em}.katex .fontsize-ensurer.reset-size8.size11,.katex .sizing.reset-size8.size11{font-size:1.72777778em}.katex .fontsize-ensurer.reset-size9.size1,.katex .sizing.reset-size9.size1{font-size:.28935185em}.katex .fontsize-ensurer.reset-size9.size2,.katex .sizing.reset-size9.size2{font-size:.34722222em}.katex .fontsize-ensurer.reset-size9.size3,.katex .sizing.reset-size9.size3{font-size:.40509259em}.katex .fontsize-ensurer.reset-size9.size4,.katex .sizing.reset-size9.size4{font-size:.46296296em}.katex .fontsize-ensurer.reset-size9.size5,.katex .sizing.reset-size9.size5{font-size:.52083333em}.katex .fontsize-ensurer.reset-size9.size6,.katex .sizing.reset-size9.size6{font-size:.5787037em}.katex .fontsize-ensurer.reset-size9.size7,.katex .sizing.reset-size9.size7{font-size:.69444444em}.katex .fontsize-ensurer.reset-size9.size8,.katex .sizing.reset-size9.size8{font-size:.83333333em}.katex .fontsize-ensurer.reset-size9.size9,.katex .sizing.reset-size9.size9{font-size:1em}.katex .fontsize-ensurer.reset-size9.size10,.katex .sizing.reset-size9.size10{font-size:1.20023148em}.katex .fontsize-ensurer.reset-size9.size11,.katex .sizing.reset-size9.size11{font-size:1.43981481em}.katex .fontsize-ensurer.reset-size10.size1,.katex .sizing.reset-size10.size1{font-size:.24108004em}.katex .fontsize-ensurer.reset-size10.size2,.katex .sizing.reset-size10.size2{font-size:.28929605em}.katex .fontsize-ensurer.reset-size10.size3,.katex .sizing.reset-size10.size3{font-size:.33751205em}.katex .fontsize-ensurer.reset-size10.size4,.katex .sizing.reset-size10.size4{font-size:.38572806em}.katex .fontsize-ensurer.reset-size10.size5,.katex .sizing.reset-size10.size5{font-size:.43394407em}.katex .fontsize-ensurer.reset-size10.size6,.katex .sizing.reset-size10.size6{font-size:.48216008em}.katex .fontsize-ensurer.reset-size10.size7,.katex .sizing.reset-size10.size7{font-size:.57859209em}.katex .fontsize-ensurer.reset-size10.size8,.katex .sizing.reset-size10.size8{font-size:.69431051em}.katex .fontsize-ensurer.reset-size10.size9,.katex .sizing.reset-size10.size9{font-size:.83317261em}.katex .fontsize-ensurer.reset-size10.size10,.katex .sizing.reset-size10.size10{font-size:1em}.katex .fontsize-ensurer.reset-size10.size11,.katex .sizing.reset-size10.size11{font-size:1.19961427em}.katex .fontsize-ensurer.reset-size11.size1,.katex .sizing.reset-size11.size1{font-size:.20096463em}.katex .fontsize-ensurer.reset-size11.size2,.katex .sizing.reset-size11.size2{font-size:.24115756em}.katex .fontsize-ensurer.reset-size11.size3,.katex .sizing.reset-size11.size3{font-size:.28135048em}.katex .fontsize-ensurer.reset-size11.size4,.katex .sizing.reset-size11.size4{font-size:.32154341em}.katex .fontsize-ensurer.reset-size11.size5,.katex .sizing.reset-size11.size5{font-size:.36173633em}.katex .fontsize-ensurer.reset-size11.size6,.katex .sizing.reset-size11.size6{font-size:.40192926em}.katex .fontsize-ensurer.reset-size11.size7,.katex .sizing.reset-size11.size7{font-size:.48231511em}.katex .fontsize-ensurer.reset-size11.size8,.katex .sizing.reset-size11.size8{font-size:.57877814em}.katex .fontsize-ensurer.reset-size11.size9,.katex .sizing.reset-size11.size9{font-size:.69453376em}.katex .fontsize-ensurer.reset-size11.size10,.katex .sizing.reset-size11.size10{font-size:.83360129em}.katex .fontsize-ensurer.reset-size11.size11,.katex .sizing.reset-size11.size11{font-size:1em}.katex .delimsizing.size1{font-family:KaTeX_Size1}.katex .delimsizing.size2{font-family:KaTeX_Size2}.katex .delimsizing.size3{font-family:KaTeX_Size3}.katex .delimsizing.size4{font-family:KaTeX_Size4}.katex .delimsizing.mult .delim-size1>span{font-family:KaTeX_Size1}.katex .delimsizing.mult .delim-size4>span{font-family:KaTeX_Size4}.katex .nulldelimiter{display:inline-block;width:.12em}.katex .delimcenter,.katex .op-symbol{position:relative}.katex .op-symbol.small-op{font-family:KaTeX_Size1}.katex .op-symbol.large-op{font-family:KaTeX_Size2}.katex .accent>.vlist-t,.katex .op-limits>.vlist-t{text-align:center}.katex .accent .accent-body{position:relative}.katex .accent .accent-body:not(.accent-full){width:0}.katex .overlay{display:block}.katex .mtable .vertical-separator{display:inline-block;min-width:1px}.katex .mtable .arraycolsep{display:inline-block}.katex .mtable .col-align-c>.vlist-t{text-align:center}.katex .mtable .col-align-l>.vlist-t{text-align:left}.katex .mtable .col-align-r>.vlist-t{text-align:right}.katex .svg-align{text-align:left}.katex svg{display:block;position:absolute;width:100%;height:inherit;fill:currentColor;stroke:currentColor;fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1}.katex svg path{stroke:none}.katex img{border-style:none;min-width:0;min-height:0;max-width:none;max-height:none}.katex .stretchy{width:100%;display:block;position:relative;overflow:hidden}.katex .stretchy:after,.katex .stretchy:before{content:""}.katex .hide-tail{width:100%;position:relative;overflow:hidden}.katex .halfarrow-left{position:absolute;left:0;width:50.2%;overflow:hidden}.katex .halfarrow-right{position:absolute;right:0;width:50.2%;overflow:hidden}.katex .brace-left{position:absolute;left:0;width:25.1%;overflow:hidden}.katex .brace-center{position:absolute;left:25%;width:50%;overflow:hidden}.katex .brace-right{position:absolute;right:0;width:25.1%;overflow:hidden}.katex .x-arrow-pad{padding:0 .5em}.katex .cd-arrow-pad{padding:0 .55556em 0 .27778em}.katex .mover,.katex .munder,.katex .x-arrow{text-align:center}.katex .boxpad{padding:0 .3em}.katex .fbox,.katex .fcolorbox{box-sizing:border-box;border:.04em solid}.katex .cancel-pad{padding:0 .2em}.katex .cancel-lap{margin-left:-.2em;margin-right:-.2em}.katex .sout{border-bottom-style:solid;border-bottom-width:.08em}.katex .angl{box-sizing:border-content;border-top:.049em solid;border-right:.049em solid;margin-right:.03889em}.katex .anglpad{padding:0 .03889em}.katex .eqn-num:before{counter-increment:katexEqnNo;content:"(" counter(katexEqnNo) ")"}.katex .mml-eqn-num:before{counter-increment:mmlEqnNo;content:"(" counter(mmlEqnNo) ")"}.katex .mtr-glue{width:50%}.katex .cd-vert-arrow{display:inline-block;position:relative}.katex .cd-label-left{display:inline-block;position:absolute;right:calc(50% + .3em);text-align:left}.katex .cd-label-right{display:inline-block;position:absolute;left:calc(50% + .3em);text-align:right}.katex-display{display:block;margin:1em 0;text-align:center}.katex-display>.katex{display:block;text-align:center;white-space:nowrap}.katex-display>.katex>.katex-html{display:block;position:relative}.katex-display>.katex>.katex-html>.tag{position:absolute;right:0}.katex-display.leqno>.katex>.katex-html>.tag{left:0;right:auto}.katex-display.fleqn>.katex{text-align:left;padding-left:2em}body{counter-reset:katexEqnNo mmlEqnNo}
+
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.katex-error {
+	color: var(--vscode-editorError-foreground);
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <pre><code class="language-python"><div><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">import</span> warnings 
+<span class="hljs-keyword">from</span> scipy.stats <span class="hljs-keyword">import</span> norm,mode
+<span class="hljs-keyword">import</span> re
+<span class="hljs-keyword">from</span> wordcloud <span class="hljs-keyword">import</span> WordCloud
+plt.rcParams[<span class="hljs-string">&#x27;font.sans-serif&#x27;</span>]=[<span class="hljs-string">&#x27;SimHei&#x27;</span>]
+plt.rcParams[<span class="hljs-string">&#x27;axes.unicode_minus&#x27;</span>]=<span class="hljs-literal">False</span>
+warnings.filterwarnings(<span class="hljs-string">&#x27;ignore&#x27;</span>)
+</div></code></pre>
+<p>#读取csv，并且添加header</p>
+<pre><code class="language-python"><div>df = pd.read_csv(<span class="hljs-string">&#x27;boss.csv&#x27;</span>,header=<span class="hljs-literal">None</span>,names=[<span class="hljs-string">&#x27;company&#x27;</span>,<span class="hljs-string">&#x27;position&#x27;</span>,<span class="hljs-string">&#x27;address&#x27;</span>,<span class="hljs-string">&#x27;salary&#x27;</span>,<span class="hljs-string">&#x27;requires&#x27;</span>,<span class="hljs-string">&#x27;lables&#x27;</span>,<span class="hljs-string">&#x27;tags&#x27;</span>])
+df.head()
+</div></code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>company</th>
+      <th>position</th>
+      <th>address</th>
+      <th>salary</th>
+      <th>requires</th>
+      <th>lables</th>
+      <th>tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>安存科技</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>9-14K</td>
+      <td>1-3年本科</td>
+      <td>计算机软件</td>
+      <td>数据挖掘,大数据,工业数据,模型产品,特征工程</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>名利天下</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>2-3K</td>
+      <td>经验不限学历不限</td>
+      <td>移动互联网</td>
+      <td>数据挖掘,数据分析师,店铺运营管理,战略目标,策划</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>长沙沃邦</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>5-10K</td>
+      <td>经验不限大专</td>
+      <td>企业服务</td>
+      <td>SPSS,VBA,建模,数据分析师,统计学</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>谊品</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>3-8K</td>
+      <td>3-5年大专</td>
+      <td>其他服务业</td>
+      <td>Python,SQL,数据分析师,数据分析管理,</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>众美健康</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>10-15K</td>
+      <td>经验不限本科</td>
+      <td>计算机软件</td>
+      <td>大数据,数据挖掘,数据仓库,商业数据分析,数据分析师</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<pre><code class="language-python"><div>df.info
+</div></code></pre>
+<pre><code>&lt;bound method DataFrame.info of      company      position address    salary  requires lables  \
+0       安存科技         数据分析师      长沙     9-14K    1-3年本科  计算机软件   
+1       名利天下         数据分析师      长沙      2-3K  经验不限学历不限  移动互联网   
+2       长沙沃邦         数据分析师      长沙     5-10K    经验不限大专   企业服务   
+3         谊品         数据分析师      长沙      3-8K    3-5年大专  其他服务业   
+4       众美健康         数据分析师      长沙    10-15K    经验不限本科  计算机软件   
+...      ...           ...     ...       ...       ...    ...   
+2532    今日头条         数据分析师      西安  6-8K·15薪    1-3年本科  移动互联网   
+2533     众科源  7k起急招运营数据分析师      西安     7-10K    经验不限本科   电子商务   
+2534    今日头条         数据分析师      西安  6-8K·15薪    1-3年本科  移动互联网   
+2535    今日头条         数据分析师      西安  4-6K·15薪    经验不限本科  移动互联网   
+2536    今日头条         数据分析师      西安  4-6K·15薪    经验不限本科  移动互联网   
+
+                                    tags  
+0                数据挖掘,大数据,工业数据,模型产品,特征工程  
+1              数据挖掘,数据分析师,店铺运营管理,战略目标,策划  
+2                  SPSS,VBA,建模,数据分析师,统计学  
+3               Python,SQL,数据分析师,数据分析管理,  
+4             大数据,数据挖掘,数据仓库,商业数据分析,数据分析师  
+...                                  ...  
+2532     Tableau，数据挖掘，BI，行业技术发展，心理学等相关专业  
+2533              数学，统计学，运营数据分析，亚马逊，电商平台  
+2534  Tableau，数据挖掘，行业技术发展，心理学等相关专业，数据分析师  
+2535         数据挖掘，Python，数据分析师，业务数据，风险报告  
+2536         数据挖掘，Python，数据开发，数据分析师，业务数据  
+
+[2537 rows x 7 columns]&gt;
+</code></pre>
+<pre><code class="language-python"><div>df.shape
+</div></code></pre>
+<pre><code>(2537, 7)
+</code></pre>
+<p>#去重</p>
+<pre><code class="language-python"><div>df.duplicated().sum()
+</div></code></pre>
+<pre><code>11
+</code></pre>
+<pre><code class="language-python"><div>df.drop_duplicates(keep=<span class="hljs-string">&#x27;first&#x27;</span>,inplace=<span class="hljs-literal">True</span>)
+</div></code></pre>
+<pre><code class="language-python"><div>df.duplicated().sum()
+</div></code></pre>
+<pre><code>0
+</code></pre>
+<pre><code class="language-python"><div>df.shape
+</div></code></pre>
+<pre><code>(2526, 7)
+</code></pre>
+<p>#因为实习的薪资和全职计算不一样，所以去掉含有‘实习’的行，以方便统计</p>
+<pre><code class="language-python"><div>x=df[<span class="hljs-string">&#x27;position&#x27;</span>].str.contains(<span class="hljs-string">&#x27;实习&#x27;</span>)
+df=df[~x]
+df.reset_index(drop=<span class="hljs-literal">True</span>,inplace=<span class="hljs-literal">True</span>)
+</div></code></pre>
+<pre><code class="language-python"><div>df.shape
+</div></code></pre>
+<pre><code>(2472, 7)
+</code></pre>
+<p>#查看address字段是否需要清洗</p>
+<pre><code class="language-python"><div>df[<span class="hljs-string">&#x27;address&#x27;</span>].unique()
+</div></code></pre>
+<pre><code>array(['长沙', '成都', '郑州', '重庆', '南京', '武汉', '厦门', '杭州', '北京', '广州', '上海',
+       '深圳', '苏州', '天津', '西安'], dtype=object)
+</code></pre>
+<p>#address可以使用，查看salary字段</p>
+<pre><code class="language-python"><div>df[<span class="hljs-string">&#x27;salary&#x27;</span>].unique()
+</div></code></pre>
+<pre><code>array(['9-14K', '2-3K', '5-10K', '3-8K', '10-15K', '8-13K', '5-6K',
+       '10-15K·15薪', '8-10K·14薪', '7-9K', '10-15K·13薪', '5-9K', '5-8K',
+       '6-10K', '8-12K', '5-7K', '15-20K', '4-7K', '30-50K·14薪', '4-6K',
+       '3-7K', '10-15K·14薪', '7-8K', '4-5K', '11-18K', '12-17K·15薪',
+       '11-12K', '7-12K', '20-25K', '7-12K·13薪', '8-13K·13薪',
+       '15-25K·16薪', '4-9K', '8-10K', '4-8K', '3-6K', '12-20K', '10-11K',
+       '12-24K', '3-4K', '6-7K', '6-8K', '8-12K·13薪', '6-10K·13薪',
+       '8-11K', '12-15K·13薪', '3-5K·14薪', '6-11K', '8-15K', '10-11K·16薪',
+       '15-30K·16薪', '2-7K', '15-20K·13薪', '15-30K', '10-13K·13薪',
+       '18-35K', '12-16K·13薪', '3-5K', '12-18K·14薪', '11-22K', '14-20K',
+       '8-12K·15薪', '10-12K·15薪', '12-24K·13薪', '8-13K·15薪', '12-18K',
+       '15-25K', '20-30K·13薪', '7-10K', '11-20K·14薪', '18-35K·13薪',
+       '20-40K', '11-16K·13薪', '12-14K', '11-14K·13薪', '4-8K·13薪', '6-9K',
+       '25-35K·15薪', '15-28K·13薪', '11-20K', '8-12K·14薪', '20-30K·16薪',
+       '5-10K·13薪', '7-14K', '10-20K', '10-13K', '12-15K', '7-11K',
+       '6-9K·13薪', '12-17K', '4-6K·15薪', '15-20K·14薪', '11-13K·13薪',
+       '8-16K', '9-14K·13薪', '10-11K·14薪', '15-16K', '20-40K·18薪',
+       '9-13K·13薪', '11-18K·14薪', '8-13K·14薪', '15-25K·13薪', '22-40K',
+       '20-40K·15薪', '26-50K', '15-30K·14薪', '13-26K', '20-35K', '25-50K',
+       '11-18K·13薪', '20-35K·14薪', '8-10K·13薪', '9-10K', '4-6K·13薪',
+       '20-40K·14薪', '2-4K', '1-4K', '6-8K·13薪', '7-9K·14薪', '11-20K·13薪',
+       '7-10K·14薪', '5-8K·13薪', '4-7K·13薪', '7-11K·13薪', '14-25K·14薪',
+       '20-30K', '20-25K·19薪', '30-60K', '15-30K·13薪', '12-22K', '13-18K',
+       '15-28K', '17-28K·15薪', '13-25K', '17-34K', '30-45K', '15-25K·14薪',
+       '25-35K', '4-9K·14薪', '20-40K·16薪', '11-22K·14薪', '5-10K·14薪',
+       '12-20K·13薪', '18-28K', '30-50K·13薪', '14-25K', '18-25K·14薪',
+       '6-8K·14薪', '5-9K·13薪', '6-9K·14薪', '15-30K·15薪', '19-35K',
+       '7-10K·13薪', '13-20K·13薪', '40-70K', '9-14K·14薪', '9-13K',
+       '12-24K·14薪', '15-18K·13薪', '35-70K', '8-9K', '11-22K·13薪',
+       '30-40K', '17-30K', '11-17K', '18-35K·14薪', '4-6K·14薪', '7-8K·13薪',
+       '18-30K·14薪', '4-5K·14薪', '10-12K', '6-11K·14薪', '6-12K',
+       '4-5K·13薪', '7-12K·14薪', '1-5K', '18-19K', '13-20K', '5-8K·15薪',
+       '6-10K·14薪', '12-13K·15薪', '11-18K·15薪', '9-12K', '11-16K',
+       '15-22K·13薪', '18-30K·13薪', '13-25K·13薪', '25-40K', '5-10K·15薪',
+       '13-20K·15薪', '5-6K·13薪', '12-18K·13薪', '10-20K·18薪', '2-6K',
+       '12-20K·14薪', '15-22K', '15-16K·13薪', '30-60K·16薪', '30-50K·15薪',
+       '13-21K·13薪', '20-24K', '17-28K', '25-45K·15薪', '17-25K',
+       '25-50K·16薪', '20-21K·16薪', '17-25K·13薪', '15-25K·15薪',
+       '16-25K·14薪', '30-45K·16薪', '20-35K·15薪', '20-30K·15薪',
+       '20-27K·15薪', '50-80K·16薪', '22-27K', '28-50K·13薪', '18-30K',
+       '16-30K·14薪', '25-45K', '20-30K·14薪', '15-30K·17薪', '13-25K·14薪',
+       '18-27K', '20-40K·13薪', '18-36K', '20-35K·16薪', '25-35K·13薪',
+       '25-30K·15薪', '25-30K', '28-40K·14薪', '25-45K·16薪', '25-50K·14薪',
+       '15-25K·17薪', '25-40K·16薪', '35-40K', '10-15K·16薪', '6-10K·15薪',
+       '20-35K·13薪', '19-32K·16薪', '30-50K·16薪', '25-30K·14薪',
+       '7-11K·15薪', '40-70K·16薪', '25-40K·15薪', '30-55K·18薪',
+       '25-35K·14薪', '18-25K', '16-30K', '12-18K·15薪', '30-50K',
+       '30-50K·18薪', '30-35K·16薪', '25-45K·14薪', '12-20K·17薪',
+       '12-20K·15薪', '14-28K', '30-55K', '60-90K', '25-40K·13薪', '65-95K',
+       '25-50K·13薪', '16-30K·16薪', '24-38K', '45-60K', '26-35K',
+       '18-35K·16薪', '30-45K·15薪', '25-50K·15薪', '25-45K·13薪',
+       '30-55K·13薪', '50-80K·14薪', '40-55K·13薪', '19-30K·14薪', '22-30K',
+       '35-55K·14薪', '21-40K·15薪', '17-25K·15薪', '15-26K', '35-60K·14薪',
+       '18-35K·15薪', '30-40K·16薪', '30-60K·15薪', '30-55K·16薪',
+       '28-40K·16薪', '90-120K·14薪', '35-55K·16薪', '20-25K·15薪',
+       '20-40K·24薪', '40-50K·15薪', '25-35K·16薪', '25-40K·14薪',
+       '35-65K·16薪', '30-45K·14薪', '40-65K·14薪', '28-45K·14薪',
+       '30-60K·14薪', '22-40K·14薪', '28-45K·16薪', '18-25K·16薪',
+       '9-14K·16薪', '15-23K', '60-90K·16薪', '12-24K·16薪', '15-23K·13薪',
+       '12-20K·16薪', '13-18K·15薪', '11-20K·15薪', '9-12K·15薪',
+       '10-13K·14薪', '18-28K·16薪', '23-24K', '25-50K·18薪', '35-50K',
+       '18-28K·13薪', '15-17K', '8-11K·13薪', '15-18K', '12-17K·14薪',
+       '16-23K', '30-35K', '13-23K', '14-28K·13薪', '40-60K', '16-22K·13薪',
+       '14-20K·13薪', '15-26K·13薪', '30-35K·15薪', '18-30K·15薪',
+       '12-22K·22薪', '18-25K·15薪', '28-35K·13薪', '40-60K·14薪',
+       '18-25K·13薪', '20-21K·14薪', '12-23K·13薪', '40-70K·14薪',
+       '25-50K·17薪', '25-30K·13薪', '15-23K·14薪', '18-26K', '16-25K·13薪',
+       '7-10K·16薪', '12-18K·16薪', '13-18K·14薪', '15-20K·15薪', '7-9K·13薪',
+       '30-40K·14薪', '28-40K·15薪', '40-60K·15薪', '14-28K·14薪',
+       '15-30K·18薪', '16-25K', '12-16K·15薪', '30-55K·15薪', '12-20K·18薪',
+       '8-9K·13薪', '12-19K·13薪', '15-24K·15薪', '20-21K', '17-18K',
+       '50-80K', '13-26K·16薪', '16-30K·15薪', '11-22K·18薪', '30-60K·13薪',
+       '35-50K·15薪', '35-50K·16薪', '18-22K', '28-45K', '23-45K·16薪',
+       '13-16K', '16-21K·14薪', '11-16K·14薪', '6-11K·13薪', '6-7K·13薪',
+       '5-7K·13薪', '2-5K', '11-15K', '9-15K', '8-14K', '5-8K·14薪',
+       '3-5K·13薪', '6-8K·15薪', '6-9K·15薪', '6-11K·15薪'], dtype=object)
+</code></pre>
+<p>#将薪资列的值进行拆分，新增bottom，top两列，作为一个岗位薪资的最低值和最高值，单值的，用button填充top</p>
+<pre><code class="language-python"><div>df[<span class="hljs-string">&#x27;bottom&#x27;</span>]=df[<span class="hljs-string">&#x27;salary&#x27;</span>].str.extract(<span class="hljs-string">&#x27;^(\d+).*&#x27;</span>)
+df[<span class="hljs-string">&#x27;top&#x27;</span>]=df[<span class="hljs-string">&#x27;salary&#x27;</span>].str.extract(<span class="hljs-string">&#x27;^.*?-(\d+).*&#x27;</span>)
+df[<span class="hljs-string">&#x27;top&#x27;</span>].fillna(df[<span class="hljs-string">&#x27;bottom&#x27;</span>],inplace=<span class="hljs-literal">True</span>)
+df
+</div></code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>company</th>
+      <th>position</th>
+      <th>address</th>
+      <th>salary</th>
+      <th>requires</th>
+      <th>lables</th>
+      <th>tags</th>
+      <th>bottom</th>
+      <th>top</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>安存科技</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>9-14K</td>
+      <td>1-3年本科</td>
+      <td>计算机软件</td>
+      <td>数据挖掘,大数据,工业数据,模型产品,特征工程</td>
+      <td>9</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>名利天下</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>2-3K</td>
+      <td>经验不限学历不限</td>
+      <td>移动互联网</td>
+      <td>数据挖掘,数据分析师,店铺运营管理,战略目标,策划</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>长沙沃邦</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>5-10K</td>
+      <td>经验不限大专</td>
+      <td>企业服务</td>
+      <td>SPSS,VBA,建模,数据分析师,统计学</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>谊品</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>3-8K</td>
+      <td>3-5年大专</td>
+      <td>其他服务业</td>
+      <td>Python,SQL,数据分析师,数据分析管理,</td>
+      <td>3</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>众美健康</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>10-15K</td>
+      <td>经验不限本科</td>
+      <td>计算机软件</td>
+      <td>大数据,数据挖掘,数据仓库,商业数据分析,数据分析师</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2467</th>
+      <td>今日头条</td>
+      <td>数据分析师</td>
+      <td>西安</td>
+      <td>6-8K·15薪</td>
+      <td>1-3年本科</td>
+      <td>移动互联网</td>
+      <td>Tableau，数据挖掘，BI，行业技术发展，心理学等相关专业</td>
+      <td>6</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>2468</th>
+      <td>众科源</td>
+      <td>7k起急招运营数据分析师</td>
+      <td>西安</td>
+      <td>7-10K</td>
+      <td>经验不限本科</td>
+      <td>电子商务</td>
+      <td>数学，统计学，运营数据分析，亚马逊，电商平台</td>
+      <td>7</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>2469</th>
+      <td>今日头条</td>
+      <td>数据分析师</td>
+      <td>西安</td>
+      <td>6-8K·15薪</td>
+      <td>1-3年本科</td>
+      <td>移动互联网</td>
+      <td>Tableau，数据挖掘，行业技术发展，心理学等相关专业，数据分析师</td>
+      <td>6</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>2470</th>
+      <td>今日头条</td>
+      <td>数据分析师</td>
+      <td>西安</td>
+      <td>4-6K·15薪</td>
+      <td>经验不限本科</td>
+      <td>移动互联网</td>
+      <td>数据挖掘，Python，数据分析师，业务数据，风险报告</td>
+      <td>4</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2471</th>
+      <td>今日头条</td>
+      <td>数据分析师</td>
+      <td>西安</td>
+      <td>4-6K·15薪</td>
+      <td>经验不限本科</td>
+      <td>移动互联网</td>
+      <td>数据挖掘，Python，数据开发，数据分析师，业务数据</td>
+      <td>4</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+<p>2472 rows × 9 columns</p>
+</div>
+<p>#有些公司标注1X薪等，故新增一列commission_pct计算每个岗位的奖金率</p>
+<pre><code class="language-python"><div>df[<span class="hljs-string">&#x27;commision_pct&#x27;</span>]=df[<span class="hljs-string">&#x27;salary&#x27;</span>].str.extract(<span class="hljs-string">&#x27;^.*?·(\d{2})薪&#x27;</span>)
+df[<span class="hljs-string">&#x27;commision_pct&#x27;</span>].fillna(<span class="hljs-number">12</span>,inplace=<span class="hljs-literal">True</span>)
+df[<span class="hljs-string">&#x27;commision_pct&#x27;</span>]=df[<span class="hljs-string">&#x27;commision_pct&#x27;</span>].astype(<span class="hljs-string">&#x27;float64&#x27;</span>)
+df[<span class="hljs-string">&#x27;commision_pct&#x27;</span>]=df[<span class="hljs-string">&#x27;commision_pct&#x27;</span>]/<span class="hljs-number">12</span>
+</div></code></pre>
+<p>#把bottom，top，commission__pct列转换为数值，计算出每个岗位的平均薪资avg_salary</p>
+<pre><code class="language-python"><div>df[<span class="hljs-string">&#x27;bottom&#x27;</span>] = df[<span class="hljs-string">&#x27;bottom&#x27;</span>].astype(<span class="hljs-string">&#x27;int64&#x27;</span>)
+df[<span class="hljs-string">&#x27;top&#x27;</span>] = df[<span class="hljs-string">&#x27;top&#x27;</span>].astype(<span class="hljs-string">&#x27;int64&#x27;</span>)
+df[<span class="hljs-string">&#x27;avg_salary&#x27;</span>] = (df[<span class="hljs-string">&#x27;bottom&#x27;</span>]+df[<span class="hljs-string">&#x27;top&#x27;</span>])/<span class="hljs-number">2</span>*df[<span class="hljs-string">&#x27;commision_pct&#x27;</span>]
+df[<span class="hljs-string">&#x27;avg_salary&#x27;</span>] = df[<span class="hljs-string">&#x27;avg_salary&#x27;</span>].astype(<span class="hljs-string">&#x27;int64&#x27;</span>)
+
+cols=list(df)
+cols.insert(<span class="hljs-number">4</span>,cols.pop(cols.index(<span class="hljs-string">&#x27;bottom&#x27;</span>)))
+cols.insert(<span class="hljs-number">5</span>,cols.pop(cols.index(<span class="hljs-string">&#x27;top&#x27;</span>)))
+cols.insert(<span class="hljs-number">6</span>,cols.pop(cols.index(<span class="hljs-string">&#x27;commision_pct&#x27;</span>)))
+cols.insert(<span class="hljs-number">7</span>,cols.pop(cols.index(<span class="hljs-string">&#x27;avg_salary&#x27;</span>)))
+df=df.loc[:,cols]
+df
+</div></code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>company</th>
+      <th>position</th>
+      <th>address</th>
+      <th>salary</th>
+      <th>bottom</th>
+      <th>top</th>
+      <th>commision_pct</th>
+      <th>avg_salary</th>
+      <th>requires</th>
+      <th>lables</th>
+      <th>tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>安存科技</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>9-14K</td>
+      <td>9</td>
+      <td>14</td>
+      <td>1.00</td>
+      <td>11</td>
+      <td>1-3年本科</td>
+      <td>计算机软件</td>
+      <td>数据挖掘,大数据,工业数据,模型产品,特征工程</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>名利天下</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>2-3K</td>
+      <td>2</td>
+      <td>3</td>
+      <td>1.00</td>
+      <td>2</td>
+      <td>经验不限学历不限</td>
+      <td>移动互联网</td>
+      <td>数据挖掘,数据分析师,店铺运营管理,战略目标,策划</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>长沙沃邦</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>5-10K</td>
+      <td>5</td>
+      <td>10</td>
+      <td>1.00</td>
+      <td>7</td>
+      <td>经验不限大专</td>
+      <td>企业服务</td>
+      <td>SPSS,VBA,建模,数据分析师,统计学</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>谊品</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>3-8K</td>
+      <td>3</td>
+      <td>8</td>
+      <td>1.00</td>
+      <td>5</td>
+      <td>3-5年大专</td>
+      <td>其他服务业</td>
+      <td>Python,SQL,数据分析师,数据分析管理,</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>众美健康</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>10-15K</td>
+      <td>10</td>
+      <td>15</td>
+      <td>1.00</td>
+      <td>12</td>
+      <td>经验不限本科</td>
+      <td>计算机软件</td>
+      <td>大数据,数据挖掘,数据仓库,商业数据分析,数据分析师</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2467</th>
+      <td>今日头条</td>
+      <td>数据分析师</td>
+      <td>西安</td>
+      <td>6-8K·15薪</td>
+      <td>6</td>
+      <td>8</td>
+      <td>1.25</td>
+      <td>8</td>
+      <td>1-3年本科</td>
+      <td>移动互联网</td>
+      <td>Tableau，数据挖掘，BI，行业技术发展，心理学等相关专业</td>
+    </tr>
+    <tr>
+      <th>2468</th>
+      <td>众科源</td>
+      <td>7k起急招运营数据分析师</td>
+      <td>西安</td>
+      <td>7-10K</td>
+      <td>7</td>
+      <td>10</td>
+      <td>1.00</td>
+      <td>8</td>
+      <td>经验不限本科</td>
+      <td>电子商务</td>
+      <td>数学，统计学，运营数据分析，亚马逊，电商平台</td>
+    </tr>
+    <tr>
+      <th>2469</th>
+      <td>今日头条</td>
+      <td>数据分析师</td>
+      <td>西安</td>
+      <td>6-8K·15薪</td>
+      <td>6</td>
+      <td>8</td>
+      <td>1.25</td>
+      <td>8</td>
+      <td>1-3年本科</td>
+      <td>移动互联网</td>
+      <td>Tableau，数据挖掘，行业技术发展，心理学等相关专业，数据分析师</td>
+    </tr>
+    <tr>
+      <th>2470</th>
+      <td>今日头条</td>
+      <td>数据分析师</td>
+      <td>西安</td>
+      <td>4-6K·15薪</td>
+      <td>4</td>
+      <td>6</td>
+      <td>1.25</td>
+      <td>6</td>
+      <td>经验不限本科</td>
+      <td>移动互联网</td>
+      <td>数据挖掘，Python，数据分析师，业务数据，风险报告</td>
+    </tr>
+    <tr>
+      <th>2471</th>
+      <td>今日头条</td>
+      <td>数据分析师</td>
+      <td>西安</td>
+      <td>4-6K·15薪</td>
+      <td>4</td>
+      <td>6</td>
+      <td>1.25</td>
+      <td>6</td>
+      <td>经验不限本科</td>
+      <td>移动互联网</td>
+      <td>数据挖掘，Python，数据开发，数据分析师，业务数据</td>
+    </tr>
+  </tbody>
+</table>
+<p>2472 rows × 11 columns</p>
+</div>
+<pre><code class="language-python"><div>df.describe()
+</div></code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>bottom</th>
+      <th>top</th>
+      <th>commision_pct</th>
+      <th>avg_salary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>2472.000000</td>
+      <td>2472.000000</td>
+      <td>2472.000000</td>
+      <td>2472.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>12.621764</td>
+      <td>21.355178</td>
+      <td>1.067894</td>
+      <td>18.395227</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>8.410919</td>
+      <td>15.055249</td>
+      <td>0.111316</td>
+      <td>13.952061</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>3.000000</td>
+      <td>1.000000</td>
+      <td>2.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>6.000000</td>
+      <td>9.000000</td>
+      <td>1.000000</td>
+      <td>7.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>10.000000</td>
+      <td>15.000000</td>
+      <td>1.000000</td>
+      <td>13.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>18.000000</td>
+      <td>30.000000</td>
+      <td>1.083333</td>
+      <td>26.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>90.000000</td>
+      <td>120.000000</td>
+      <td>2.000000</td>
+      <td>122.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>#去掉一些极端值，这里设置平均值为3k-70k</p>
+<pre><code class="language-python"><div>df=df[(df.avg_salary&gt;<span class="hljs-number">3</span>)&amp;(df.avg_salary&lt;<span class="hljs-number">70</span>)]
+df.describe()
+</div></code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>bottom</th>
+      <th>top</th>
+      <th>commision_pct</th>
+      <th>avg_salary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>2432.000000</td>
+      <td>2432.000000</td>
+      <td>2432.000000</td>
+      <td>2432.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>12.534951</td>
+      <td>21.247122</td>
+      <td>1.067914</td>
+      <td>18.257401</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>7.836120</td>
+      <td>14.377763</td>
+      <td>0.111021</td>
+      <td>13.180500</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>2.000000</td>
+      <td>5.000000</td>
+      <td>1.000000</td>
+      <td>4.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>6.000000</td>
+      <td>10.000000</td>
+      <td>1.000000</td>
+      <td>7.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>10.000000</td>
+      <td>15.000000</td>
+      <td>1.000000</td>
+      <td>14.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>18.000000</td>
+      <td>30.000000</td>
+      <td>1.083333</td>
+      <td>26.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>50.000000</td>
+      <td>80.000000</td>
+      <td>2.000000</td>
+      <td>66.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>#观察requests</p>
+<pre><code class="language-python"><div>df[<span class="hljs-string">&#x27;requires&#x27;</span>].unique()
+</div></code></pre>
+<pre><code>array(['1-3年本科', '经验不限大专', '3-5年大专', '经验不限本科', '3-5年本科', '1-3年硕士',
+       '1-3年大专', '1年以内大专', '5-10年本科', '1-3年学历不限', '1年以内本科', '在校/应届本科',
+       '5-10年大专', '3-5年硕士', '1年以内学历不限', '经验不限学历不限', '1年以内硕士', '1年以内高中',
+       '5-10年硕士', '1-3年高中', '在校/应届大专', '经验不限中专/中技', '经验不限硕士', '1-3年中专/中技',
+       '在校/应届硕士', '10年以上本科', '3-5年学历不限', '1-3年博士', '5-10年学历不限', '5-10年博士',
+       '经验不限博士', '经验不限高中', '10年以上硕士'], dtype=object)
+</code></pre>
+<p>#将经验需求拆分出来放入experience字段，学历要求放入diploma字段</p>
+<pre><code class="language-python"><div>df[<span class="hljs-string">&#x27;experience&#x27;</span>]=df[<span class="hljs-string">&#x27;requires&#x27;</span>].str.extract(<span class="hljs-string">&#x27;^(\d+/?-\d+)&#x27;</span>)
+df[<span class="hljs-string">&#x27;diploma&#x27;</span>]=df[<span class="hljs-string">&#x27;requires&#x27;</span>].str[<span class="hljs-number">-2</span>:]
+df
+</div></code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>company</th>
+      <th>position</th>
+      <th>address</th>
+      <th>salary</th>
+      <th>bottom</th>
+      <th>top</th>
+      <th>commision_pct</th>
+      <th>avg_salary</th>
+      <th>requires</th>
+      <th>lables</th>
+      <th>tags</th>
+      <th>experience</th>
+      <th>diploma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>安存科技</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>9-14K</td>
+      <td>9</td>
+      <td>14</td>
+      <td>1.00</td>
+      <td>11</td>
+      <td>1-3年本科</td>
+      <td>计算机软件</td>
+      <td>数据挖掘,大数据,工业数据,模型产品,特征工程</td>
+      <td>1-3</td>
+      <td>本科</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>长沙沃邦</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>5-10K</td>
+      <td>5</td>
+      <td>10</td>
+      <td>1.00</td>
+      <td>7</td>
+      <td>经验不限大专</td>
+      <td>企业服务</td>
+      <td>SPSS,VBA,建模,数据分析师,统计学</td>
+      <td>NaN</td>
+      <td>大专</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>谊品</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>3-8K</td>
+      <td>3</td>
+      <td>8</td>
+      <td>1.00</td>
+      <td>5</td>
+      <td>3-5年大专</td>
+      <td>其他服务业</td>
+      <td>Python,SQL,数据分析师,数据分析管理,</td>
+      <td>3-5</td>
+      <td>大专</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>众美健康</td>
+      <td>数据分析师</td>
+      <td>长沙</td>
+      <td>10-15K</td>
+      <td>10</td>
+      <td>15</td>
+      <td>1.00</td>
+      <td>12</td>
+      <td>经验不限本科</td>
+      <td>计算机软件</td>
+      <td>大数据,数据挖掘,数据仓库,商业数据分析,数据分析师</td>
+      <td>NaN</td>
+      <td>本科</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>百川创意</td>
+      <td>数据分析工程师</td>
+      <td>长沙</td>
+      <td>8-13K</td>
+      <td>8</td>
+      <td>13</td>
+      <td>1.00</td>
+      <td>10</td>
+      <td>1-3年本科</td>
+      <td>互联网</td>
+      <td>分配策略,数据分析工程师,业务发展趋势,业务分析,渠道</td>
+      <td>1-3</td>
+      <td>本科</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2467</th>
+      <td>今日头条</td>
+      <td>数据分析师</td>
+      <td>西安</td>
+      <td>6-8K·15薪</td>
+      <td>6</td>
+      <td>8</td>
+      <td>1.25</td>
+      <td>8</td>
+      <td>1-3年本科</td>
+      <td>移动互联网</td>
+      <td>Tableau，数据挖掘，BI，行业技术发展，心理学等相关专业</td>
+      <td>1-3</td>
+      <td>本科</td>
+    </tr>
+    <tr>
+      <th>2468</th>
+      <td>众科源</td>
+      <td>7k起急招运营数据分析师</td>
+      <td>西安</td>
+      <td>7-10K</td>
+      <td>7</td>
+      <td>10</td>
+      <td>1.00</td>
+      <td>8</td>
+      <td>经验不限本科</td>
+      <td>电子商务</td>
+      <td>数学，统计学，运营数据分析，亚马逊，电商平台</td>
+      <td>NaN</td>
+      <td>本科</td>
+    </tr>
+    <tr>
+      <th>2469</th>
+      <td>今日头条</td>
+      <td>数据分析师</td>
+      <td>西安</td>
+      <td>6-8K·15薪</td>
+      <td>6</td>
+      <td>8</td>
+      <td>1.25</td>
+      <td>8</td>
+      <td>1-3年本科</td>
+      <td>移动互联网</td>
+      <td>Tableau，数据挖掘，行业技术发展，心理学等相关专业，数据分析师</td>
+      <td>1-3</td>
+      <td>本科</td>
+    </tr>
+    <tr>
+      <th>2470</th>
+      <td>今日头条</td>
+      <td>数据分析师</td>
+      <td>西安</td>
+      <td>4-6K·15薪</td>
+      <td>4</td>
+      <td>6</td>
+      <td>1.25</td>
+      <td>6</td>
+      <td>经验不限本科</td>
+      <td>移动互联网</td>
+      <td>数据挖掘，Python，数据分析师，业务数据，风险报告</td>
+      <td>NaN</td>
+      <td>本科</td>
+    </tr>
+    <tr>
+      <th>2471</th>
+      <td>今日头条</td>
+      <td>数据分析师</td>
+      <td>西安</td>
+      <td>4-6K·15薪</td>
+      <td>4</td>
+      <td>6</td>
+      <td>1.25</td>
+      <td>6</td>
+      <td>经验不限本科</td>
+      <td>移动互联网</td>
+      <td>数据挖掘，Python，数据开发，数据分析师，业务数据</td>
+      <td>NaN</td>
+      <td>本科</td>
+    </tr>
+  </tbody>
+</table>
+<p>2432 rows × 13 columns</p>
+</div>
+<p>#查看experience和diploma字段，替换null为'经验不限'</p>
+<pre><code class="language-python"><div>df[<span class="hljs-string">&#x27;experience&#x27;</span>].unique()
+</div></code></pre>
+<pre><code>array(['1-3', nan, '3-5', '5-10'], dtype=object)
+</code></pre>
+<pre><code class="language-python"><div>df[<span class="hljs-string">&#x27;experience&#x27;</span>].replace(<span class="hljs-string">&#x27;1-3&#x27;</span>,<span class="hljs-string">&#x27;1-3年&#x27;</span>,inplace=<span class="hljs-literal">True</span>)
+df[<span class="hljs-string">&#x27;experience&#x27;</span>].replace(<span class="hljs-string">&#x27;3-5&#x27;</span>,<span class="hljs-string">&#x27;3-5年&#x27;</span>,inplace=<span class="hljs-literal">True</span>)
+df[<span class="hljs-string">&#x27;experience&#x27;</span>].replace(<span class="hljs-string">&#x27;5-10&#x27;</span>,<span class="hljs-string">&#x27;5-10年&#x27;</span>,inplace=<span class="hljs-literal">True</span>)
+df[<span class="hljs-string">&#x27;experience&#x27;</span>].replace(np.nan,<span class="hljs-string">&#x27;经验不限&#x27;</span>,inplace=<span class="hljs-literal">True</span>)
+df[<span class="hljs-string">&#x27;experience&#x27;</span>].unique()
+</div></code></pre>
+<pre><code>array(['1-3年', '经验不限', '3-5年', '5-10年'], dtype=object)
+</code></pre>
+<pre><code class="language-python"><div>df[<span class="hljs-string">&#x27;diploma&#x27;</span>].unique()
+</div></code></pre>
+<pre><code>array(['本科', '大专', '硕士', '不限', '高中', '中技', '博士'], dtype=object)
+</code></pre>
+<p>#观察lables列，对数量较少且为传统行业的数据归入其他行业</p>
+<pre><code class="language-python"><div>pd.set_option(<span class="hljs-string">&#x27;max_row&#x27;</span>,<span class="hljs-number">100</span>) 
+df[<span class="hljs-string">&#x27;lables&#x27;</span>].value_counts()
+</div></code></pre>
+<pre><code>互联网            677
+移动互联网          301
+计算机软件          236
+电子商务           197
+数据服务           144
+游戏              65
+在线教育            57
+生活服务            53
+医疗              50
+O2O             43
+贸易/进出口          43
+人力资源服务          42
+企业服务            37
+物流/仓储           30
+其他行业            29
+批发/零售           29
+环保              21
+信息安全            21
+计算机服务           21
+银行              20
+服装/纺织/皮革        20
+智能硬件            19
+广告              19
+咨询              19
+通信/网络设备         16
+新零售             14
+工程施工            14
+证券/期货           13
+社交网络            13
+食品/饮料/烟酒        13
+电子/半导体/集成电路     11
+房地产             10
+制药              10
+培训机构            10
+其他服务业            9
+其他专业服务           8
+地产经纪             6
+投资/融资            6
+汽车生产             6
+旅游               6
+文化/体育/娱乐         5
+机械设备/机电/重工       4
+仪器仪表/工业自动化       4
+日化               4
+新能源              4
+检测/认证            3
+媒体               3
+餐饮               3
+学术/科研            3
+物业服务             2
+家具/家电/家居         2
+政府/公共事业          2
+分类信息             2
+建材               2
+翻译               2
+建筑设计             2
+酒店               2
+交通/运输            2
+运营商              2
+装修装饰             2
+电力/热力/燃气/水利      2
+法律               1
+石油/石化            1
+4S店/后市场          1
+学前教育             1
+印刷/包装/造纸         1
+广播/影视            1
+音乐/视频/阅读         1
+计算机硬件            1
+原材料及加工/模具        1
+租赁/拍卖/典当         1
+保险               1
+基金               1
+农/林/牧/渔          1
+非盈利机构            1
+船舶/航空/航天         1
+化工               1
+美容/美发            1
+Name: lables, dtype: int64
+</code></pre>
+<pre><code class="language-python"><div>df.loc[~df[<span class="hljs-string">&#x27;lables&#x27;</span>].isin([<span class="hljs-string">&#x27;互联网&#x27;</span>,<span class="hljs-string">&#x27;计算机软件&#x27;</span>,<span class="hljs-string">&#x27;移动互联网&#x27;</span>,<span class="hljs-string">&#x27;电子商务&#x27;</span>,<span class="hljs-string">&#x27;数据服务&#x27;</span>,<span class="hljs-string">&#x27;信息安全&#x27;</span>,<span class="hljs-string">&#x27;计算机服务&#x27;</span>,<span class="hljs-string">&#x27;咨询&#x27;</span>,<span class="hljs-string">&#x27;智能硬件&#x27;</span>,<span class="hljs-string">&#x27;社交网络&#x27;</span>,
+                           <span class="hljs-string">&#x27;互联网金融&#x27;</span>,<span class="hljs-string">&#x27;游戏&#x27;</span>,<span class="hljs-string">&#x27;在线教育&#x27;</span>,<span class="hljs-string">&#x27;生活服务&#x27;</span>,<span class="hljs-string">&#x27;O2O&#x27;</span>,<span class="hljs-string">&#x27;医疗健康&#x27;</span>,<span class="hljs-string">&#x27;贸易/进出口&#x27;</span>,<span class="hljs-string">&#x27;物流/仓储 &#x27;</span>,<span class="hljs-string">&#x27;企业服务&#x27;</span>,<span class="hljs-string">&#x27;银行&#x27;</span>,<span class="hljs-string">&#x27;新零售&#x27;</span>]),<span class="hljs-string">&#x27;lables&#x27;</span>]=<span class="hljs-string">&#x27;其他行业&#x27;</span>
+df[<span class="hljs-string">&#x27;lables&#x27;</span>].value_counts()
+</div></code></pre>
+<pre><code>互联网       677
+其他行业      452
+移动互联网     301
+计算机软件     236
+电子商务      197
+数据服务      144
+游戏         65
+在线教育       57
+生活服务       53
+贸易/进出口     43
+O2O        43
+企业服务       37
+计算机服务      21
+信息安全       21
+银行         20
+咨询         19
+智能硬件       19
+新零售        14
+社交网络       13
+Name: lables, dtype: int64
+</code></pre>
+<p>#数据可视化和简单的分析</p>
+<pre><code class="language-python"><div>df.avg_salary.groupby(df[<span class="hljs-string">&#x27;address&#x27;</span>]).agg([<span class="hljs-string">&#x27;mean&#x27;</span>,<span class="hljs-string">&#x27;median&#x27;</span>]).plot.bar(figsize=(<span class="hljs-number">16</span>,<span class="hljs-number">8</span>))
+</div></code></pre>
+<pre><code>&lt;AxesSubplot:xlabel='address'&gt;
+</code></pre>
+<p><img src="file:///d:\Code\数据集\boss_files\boss_38_1.png" alt="png"></p>
+<p>#通过上图，可以发现北上深杭这四个城市的工资水平远远高于其他城市，广州苏州稍为靠后
+靠前的这几个城市都分布在东部，中部城市薪资水平普遍低一些</p>
+<pre><code class="language-python"><div>fig=plt.figure(figsize=(<span class="hljs-number">12</span>,<span class="hljs-number">6</span>),dpi=<span class="hljs-number">80</span>)
+plt.hist(df[<span class="hljs-string">&#x27;avg_salary&#x27;</span>],bins=<span class="hljs-number">30</span>,color=<span class="hljs-string">&#x27;#f59311&#x27;</span>,alpha=<span class="hljs-number">0.3</span>,edgecolor=<span class="hljs-string">&#x27;k&#x27;</span>)
+plt.ylabel(<span class="hljs-string">&#x27;岗位数&#x27;</span>,fontsize=<span class="hljs-number">15</span>)
+plt.xlabel(<span class="hljs-string">&#x27;薪资&#x27;</span>,fontsize=<span class="hljs-number">15</span>)
+plt.xticks(list(range(<span class="hljs-number">0</span>,<span class="hljs-number">70</span>,<span class="hljs-number">5</span>)))
+plt.show()
+</div></code></pre>
+<p><img src="file:///d:\Code\数据集\boss_files\boss_40_0.png" alt="png"></p>
+<p>#少部分人高工资，月薪一万至两万的岗位不在少数。然而四千至五千的岗位居然是最多的。</p>
+<pre><code class="language-python"><div>plt.figure(figsize=(<span class="hljs-number">16</span>,<span class="hljs-number">16</span>),dpi=<span class="hljs-number">80</span>)
+plt.subplot(<span class="hljs-number">121</span>)
+temp = df[df.avg_salary&lt;<span class="hljs-number">10</span>].groupby(<span class="hljs-string">&#x27;address&#x27;</span>).avg_salary.count()
+plt.pie(temp,labels=temp.index,autopct=<span class="hljs-string">&#x27;% .2f%%&#x27;</span>)
+plt.title(<span class="hljs-string">&#x27;薪资小于10K各城市占比&#x27;</span>)
+plt.subplot(<span class="hljs-number">122</span>)
+temp = df[df.avg_salary&gt;<span class="hljs-number">10</span>].groupby(<span class="hljs-string">&#x27;address&#x27;</span>).avg_salary.count()
+plt.pie(temp,labels=temp.index,autopct=<span class="hljs-string">&#x27;% .2f%%&#x27;</span>)
+plt.title(<span class="hljs-string">&#x27;薪资大于10K各城市占比&#x27;</span>)
+</div></code></pre>
+<pre><code>Text(0.5, 1.0, '薪资大于10K各城市占比')
+</code></pre>
+<p><img src="file:///d:\Code\数据集\boss_files\boss_42_1.png" alt="png"></p>
+<p>#从以上饼图可以看到，各城市间薪资水平差异非常大，低薪岗位主要分布于江苏及中西部城市，北上杭深相对工资就高一些。</p>
+<pre><code class="language-python"><div>data1=df[df.address==<span class="hljs-string">&#x27;北京&#x27;</span>][<span class="hljs-string">&#x27;avg_salary&#x27;</span>]
+data2=df[df.address==<span class="hljs-string">&#x27;上海&#x27;</span>][<span class="hljs-string">&#x27;avg_salary&#x27;</span>]
+data3=df[df.address==<span class="hljs-string">&#x27;广州&#x27;</span>][<span class="hljs-string">&#x27;avg_salary&#x27;</span>]
+data4=df[df.address==<span class="hljs-string">&#x27;深圳&#x27;</span>][<span class="hljs-string">&#x27;avg_salary&#x27;</span>]
+data5=df[df.address==<span class="hljs-string">&#x27;杭州&#x27;</span>][<span class="hljs-string">&#x27;avg_salary&#x27;</span>]
+plt.figure(figsize=(<span class="hljs-number">12</span>,<span class="hljs-number">6</span>),dpi=<span class="hljs-number">80</span>)
+plt.boxplot([data1,data2,data3,data4,data5],labels=[<span class="hljs-string">&#x27;北京&#x27;</span>,<span class="hljs-string">&#x27;上海&#x27;</span>,<span class="hljs-string">&#x27;广州&#x27;</span>,<span class="hljs-string">&#x27;深圳&#x27;</span>,<span class="hljs-string">&#x27;杭州&#x27;</span>], 
+            flierprops={<span class="hljs-string">&#x27;marker&#x27;</span>:<span class="hljs-string">&#x27;o&#x27;</span>,<span class="hljs-string">&#x27;markerfacecolor&#x27;</span>:<span class="hljs-string">&#x27;r&#x27;</span>,<span class="hljs-string">&#x27;color&#x27;</span>:<span class="hljs-string">&#x27;k&#x27;</span>},
+            patch_artist=<span class="hljs-literal">True</span>,boxprops={<span class="hljs-string">&#x27;color&#x27;</span>:<span class="hljs-string">&#x27;k&#x27;</span>,<span class="hljs-string">&#x27;facecolor&#x27;</span>:<span class="hljs-string">&#x27;#FFFACD&#x27;</span>})
+ax=plt.gca()
+ax.patch.set_facecolor(<span class="hljs-string">&#x27;#FFFAFA&#x27;</span>)
+ax.patch.set_alpha(<span class="hljs-number">0.8</span>)
+plt.title(<span class="hljs-string">&#x27;主要城市薪资水平箱线图&#x27;</span>,fontsize=<span class="hljs-number">15</span>)
+plt.ylabel(<span class="hljs-string">&#x27;薪资(单位：k)&#x27;</span>,fontsize=<span class="hljs-number">12</span>)
+plt.show()
+</div></code></pre>
+<p><img src="file:///d:\Code\数据集\boss_files\boss_44_0.png" alt="png"></p>
+<p>#选取薪资水平较高的五个城市进行分析可以发现，北京的薪资水平是最高的，杭州上海深圳相对两级分化大一些</p>
+<pre><code class="language-python"><div>d = df[<span class="hljs-string">&#x27;avg_salary&#x27;</span>].groupby(df[<span class="hljs-string">&#x27;diploma&#x27;</span>])
+d_avg = d.mean()
+c = list(d_avg.index)
+v = list(range(<span class="hljs-number">1</span>,len(c)+<span class="hljs-number">1</span>))
+w = d_avg.values.astype(<span class="hljs-string">&#x27;int64&#x27;</span>)
+x = d.median().values.astype(<span class="hljs-string">&#x27;int64&#x27;</span>)
+move = <span class="hljs-number">0.4</span>
+plt.figure(figsize=(<span class="hljs-number">14</span>,<span class="hljs-number">8</span>),dpi=<span class="hljs-number">80</span>)
+plt.bar(v,w,width=move,color=<span class="hljs-string">&#x27;#eed777&#x27;</span>)
+plt.bar([i+move <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> v],x,width=move,color=<span class="hljs-string">&#x27;#334f65&#x27;</span>)
+a = np.arange(<span class="hljs-number">0</span>,<span class="hljs-number">7</span>)+<span class="hljs-number">1.2</span>
+plt.xticks(a,c)
+plt.yticks(list(range(<span class="hljs-number">0</span>,<span class="hljs-number">40</span>,<span class="hljs-number">5</span>)))
+plt.legend([<span class="hljs-string">&#x27;均值&#x27;</span>,<span class="hljs-string">&#x27;中位数&#x27;</span>])
+plt.title(<span class="hljs-string">&#x27;各学历薪资均值及中位数比较图&#x27;</span>,fontsize=<span class="hljs-number">16</span>)
+plt.xlabel(<span class="hljs-string">&#x27;学历&#x27;</span>,fontsize = <span class="hljs-number">12</span>)
+plt.ylabel(<span class="hljs-string">&#x27;薪资(单位K)&#x27;</span>,fontsize = <span class="hljs-number">12</span>)
+<span class="hljs-keyword">for</span> e,f <span class="hljs-keyword">in</span> zip(v,w):
+    plt.text(e,f,<span class="hljs-string">&#x27;{}k&#x27;</span>.format(f),ha=<span class="hljs-string">&#x27;center&#x27;</span>,fontsize=<span class="hljs-number">12</span>)
+<span class="hljs-keyword">for</span> g,h <span class="hljs-keyword">in</span> zip([i+move <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> v],x):
+    plt.text(g,h,<span class="hljs-string">&#x27;{}k&#x27;</span>.format(h),ha=<span class="hljs-string">&#x27;center&#x27;</span>,fontsize=<span class="hljs-number">12</span>)
+plt.show()
+</div></code></pre>
+<p><img src="file:///d:\Code\数据集\boss_files\boss_46_0.png" alt="png"></p>
+<p>#从学历看是否是本科，对薪资水平的影响很大。
+本科与硕士之间并没有特别大的差距，博士的薪资水平远远高于其他学历。</p>
+<pre><code class="language-python"><div>data = df[<span class="hljs-string">&#x27;diploma&#x27;</span>].value_counts()
+y=data.values
+plt.figure(figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">10</span>),dpi=<span class="hljs-number">80</span>)
+plt.pie(y,labels=data.index,autopct=<span class="hljs-string">&#x27;%.1f %%&#x27;</span>)
+plt.show()
+</div></code></pre>
+<p><img src="file:///d:\Code\数据集\boss_files\boss_48_0.png" alt="png"></p>
+<p>#从市场需求来看，要求本科占据绝大多数，要求硕士的较少，而博士则是极少数</p>
+<pre><code class="language-python"><div>d = df[<span class="hljs-string">&#x27;avg_salary&#x27;</span>].groupby(df[<span class="hljs-string">&#x27;experience&#x27;</span>])
+d_avg = d.mean()
+c = list(d_avg.index)
+v = list(range(<span class="hljs-number">1</span>,len(c)+<span class="hljs-number">1</span>))
+w = d_avg.values.astype(<span class="hljs-string">&#x27;int64&#x27;</span>)
+x = d.median().values.astype(<span class="hljs-string">&#x27;int64&#x27;</span>)
+move = <span class="hljs-number">0.4</span>
+plt.figure(figsize=(<span class="hljs-number">14</span>,<span class="hljs-number">8</span>),dpi=<span class="hljs-number">80</span>)
+plt.bar(v,w,width=move,color=<span class="hljs-string">&#x27;#002c53&#x27;</span>)
+plt.bar([i+move <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> v],x,width=move,color=<span class="hljs-string">&#x27;#0c84c6&#x27;</span>)
+a = np.arange(<span class="hljs-number">0</span>,<span class="hljs-number">4</span>)+<span class="hljs-number">1.2</span>
+plt.xticks(a,c)
+plt.yticks(list(range(<span class="hljs-number">0</span>,<span class="hljs-number">40</span>,<span class="hljs-number">5</span>)))
+plt.legend([<span class="hljs-string">&#x27;均值&#x27;</span>,<span class="hljs-string">&#x27;中位数&#x27;</span>])
+plt.title(<span class="hljs-string">&#x27;各工作年限薪资均值及中位数比较图&#x27;</span>,fontsize=<span class="hljs-number">16</span>)
+plt.xlabel(<span class="hljs-string">&#x27;工作经验&#x27;</span>,fontsize = <span class="hljs-number">12</span>)
+plt.ylabel(<span class="hljs-string">&#x27;薪资(单位K)&#x27;</span>,fontsize = <span class="hljs-number">12</span>)
+<span class="hljs-keyword">for</span> e,f <span class="hljs-keyword">in</span> zip(v,w):
+    plt.text(e,f,<span class="hljs-string">&#x27;{}k&#x27;</span>.format(f),ha=<span class="hljs-string">&#x27;center&#x27;</span>,fontsize=<span class="hljs-number">12</span>)
+<span class="hljs-keyword">for</span> g,h <span class="hljs-keyword">in</span> zip([i+move <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> v],x):
+    plt.text(g,h,<span class="hljs-string">&#x27;{}k&#x27;</span>.format(h),ha=<span class="hljs-string">&#x27;center&#x27;</span>,fontsize=<span class="hljs-number">12</span>)
+plt.show()
+</div></code></pre>
+<p><img src="file:///d:\Code\数据集\boss_files\boss_50_0.png" alt="png"></p>
+<p>#应届生的工资还是比较低的，一旦有3年工作经验，工资水平将直线上升。</p>
+<pre><code class="language-python"><div>data = df[<span class="hljs-string">&#x27;experience&#x27;</span>].value_counts()
+y=data.values
+plt.figure(figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">10</span>),dpi=<span class="hljs-number">80</span>)
+plt.pie(y,labels=data.index,autopct=<span class="hljs-string">&#x27;%.1f %%&#x27;</span>)
+plt.show()
+</div></code></pre>
+<p><img src="file:///d:\Code\数据集\boss_files\boss_52_0.png" alt="png"></p>
+<p>#市场上对于工作经验的要求还是很强烈，1-5年的经验要求占绝大多数，工作经验是入职成功与否的关键因素。</p>
+<pre><code class="language-python"><div>d = df[<span class="hljs-string">&#x27;avg_salary&#x27;</span>].groupby(df[<span class="hljs-string">&#x27;lables&#x27;</span>])
+d_avg = d.mean()
+c = list(d_avg.index)
+v = list(range(<span class="hljs-number">1</span>,len(c)+<span class="hljs-number">1</span>))
+w = d_avg.values.astype(<span class="hljs-string">&#x27;int64&#x27;</span>)
+x = d.median().values.astype(<span class="hljs-string">&#x27;int64&#x27;</span>)
+move = <span class="hljs-number">0.4</span>
+plt.figure(figsize=(<span class="hljs-number">20</span>,<span class="hljs-number">8</span>),dpi=<span class="hljs-number">80</span>)
+plt.bar(v,w,width=move,color=<span class="hljs-string">&#x27;#9de0ff&#x27;</span>)
+plt.bar([i+move <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> v],x,width=move,color=<span class="hljs-string">&#x27;#ffa897&#x27;</span>)
+a = np.arange(<span class="hljs-number">0</span>,<span class="hljs-number">19</span>)+<span class="hljs-number">1.3</span>
+plt.xticks(a,c)
+plt.yticks(list(range(<span class="hljs-number">0</span>,<span class="hljs-number">40</span>,<span class="hljs-number">5</span>)))
+plt.legend([<span class="hljs-string">&#x27;均值&#x27;</span>,<span class="hljs-string">&#x27;中位数&#x27;</span>])
+plt.title(<span class="hljs-string">&#x27;各行业薪资均值及中位数比较图&#x27;</span>,fontsize=<span class="hljs-number">16</span>)
+plt.xlabel(<span class="hljs-string">&#x27;行业&#x27;</span>,fontsize = <span class="hljs-number">12</span>)
+plt.ylabel(<span class="hljs-string">&#x27;薪资(单位K)&#x27;</span>,fontsize = <span class="hljs-number">12</span>)
+<span class="hljs-keyword">for</span> e,f <span class="hljs-keyword">in</span> zip(v,w):
+    plt.text(e,f,<span class="hljs-string">&#x27;{}k&#x27;</span>.format(f),ha=<span class="hljs-string">&#x27;center&#x27;</span>,fontsize=<span class="hljs-number">12</span>)
+<span class="hljs-keyword">for</span> g,h <span class="hljs-keyword">in</span> zip([i+move <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> v],x):
+    plt.text(g,h,<span class="hljs-string">&#x27;{}k&#x27;</span>.format(h),ha=<span class="hljs-string">&#x27;center&#x27;</span>,fontsize=<span class="hljs-number">12</span>)
+plt.show()
+</div></code></pre>
+<p><img src="file:///d:\Code\数据集\boss_files\boss_54_0.png" alt="png"></p>
+<pre><code class="language-python"><div>data = df[<span class="hljs-string">&#x27;lables&#x27;</span>].value_counts()
+y=data.values
+plt.figure(figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">10</span>),dpi=<span class="hljs-number">80</span>)
+plt.pie(y,labels=data.index,autopct=<span class="hljs-string">&#x27;%.1f %%&#x27;</span>)
+plt.show()
+</div></code></pre>
+<p><img src="file:///d:\Code\数据集\boss_files\boss_56_0.png" alt="png"></p>
+<p>#上2图显示 互联网行业和电子商务对该岗位的需求非常大，同时薪资水平相比于其他行业也高了很多
+而其他传统行业相对来说，无论是需求量还是薪资水平，都低一些</p>
+<pre><code class="language-python"><div><span class="hljs-keyword">from</span> wordcloud <span class="hljs-keyword">import</span> WordCloud
+text = df[<span class="hljs-string">&#x27;tags&#x27;</span>].dropna().to_string()
+<span class="hljs-comment"># 绘制词云图</span>
+plt.figure(figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">8</span>))
+wordcloud = WordCloud(font_path = <span class="hljs-string">&quot;simhei.ttf&quot;</span>,
+                      background_color = <span class="hljs-string">&quot;white&quot;</span>,
+                      min_font_size = <span class="hljs-number">10</span>,
+                      color_func = <span class="hljs-keyword">lambda</span> *args, **kwargs:(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>),
+                      width = <span class="hljs-number">900</span>, height = <span class="hljs-number">600</span>).generate(text)
+plt.imshow(wordcloud)
+plt.axis(<span class="hljs-string">&quot;off&quot;</span>)
+</div></code></pre>
+<pre><code>(-0.5, 899.5, 599.5, -0.5)
+</code></pre>
+<p><img src="file:///d:\Code\数据集\boss_files\boss_58_1.png" alt="png"></p>
+<p>#发现有些意义不大的字段重复率高，去掉以后再看</p>
+<pre><code class="language-python"><div><span class="hljs-keyword">from</span> wordcloud <span class="hljs-keyword">import</span> WordCloud
+text = df[<span class="hljs-string">&#x27;tags&#x27;</span>].dropna().to_string()
+text=text.replace(<span class="hljs-string">&quot;数据分析师&quot;</span>,<span class="hljs-string">&#x27;&#x27;</span>)
+text=text.replace(<span class="hljs-string">&quot;数据分析工程师&quot;</span>,<span class="hljs-string">&#x27;&#x27;</span>)
+text=text.replace(<span class="hljs-string">&quot;数据分析员&quot;</span>,<span class="hljs-string">&#x27;&#x27;</span>)
+text=text.replace(<span class="hljs-string">&quot;数据分析&quot;</span>,<span class="hljs-string">&#x27;&#x27;</span>)
+
+<span class="hljs-comment"># 绘制词云图</span>
+plt.figure(figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">8</span>))
+wordcloud = WordCloud(font_path = <span class="hljs-string">&quot;simhei.ttf&quot;</span>,
+                      background_color = <span class="hljs-string">&quot;white&quot;</span>,
+                      min_font_size = <span class="hljs-number">10</span>,
+                      color_func = <span class="hljs-keyword">lambda</span> *args, **kwargs:(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>),
+                      width = <span class="hljs-number">900</span>, height = <span class="hljs-number">600</span>).generate(text)
+plt.imshow(wordcloud)
+plt.axis(<span class="hljs-string">&quot;off&quot;</span>)
+</div></code></pre>
+<pre><code>(-0.5, 899.5, 599.5, -0.5)
+</code></pre>
+<p><img src="file:///d:\Code\数据集\boss_files\boss_60_1.png" alt="png"></p>
+<p>#此图显示各个企业对数据分析师职业技能需求的关键字。数据挖掘，商业分析,python,数据仓库,建模，SQL是最需要的技能。</p>
+<p>#通过以上简要分析，可以发现，如果要成功转行，应该往北上广深行这几个城市考虑，这些城市的薪资水平高
+而行业方面应该着眼于互联网及电子商务等新兴行业，这些行业对该岗位的需求都比较大，而且薪资水平也普遍高
+工作经验对于该岗位而言非常重要，能否成功转行的关键门槛在于是否有工作经验，与薪资水平呈正相关
+而转行成功以后，只有在迈过3年这个坎，才会有比较大的突破</p>
+<pre><code class="language-python"><div>
+</div></code></pre>
+
+    </body>
+    </html>
